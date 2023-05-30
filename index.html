@@ -1,86 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<title>Alien Abduction Order Form</title>
-	<link href="css/forms-end.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Yusef Mahmoud</title>
 </head>
-
 <body>
-	<div class="wrapper">
-		<section>
-			<h1>Alien Abduction Order Form</h1>
-			<p>Fill out the form below to place an order for an alien abduction by one of our fine UFOs.</p>
-			<form method="POST" action="https://e3vwdl4bpd.execute-api.us-west-2.amazonaws.com/default/API2SES">
-				<fieldset>
-					<legend>Your contact information</legend>
-					<label for="name">Your name </label>
-					<input type="text" id="name" name="name" autofocus>
-					<label for="phone">Phone number</label>
-					<input type="tel" id="phone" name="phone" placeholder="Don't forget the area code!">
-					<label for="email">Email</label>
-					<input type="email" id="email" name="email">
+    <header>
+        <a href="#" class="logo">Yusef</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-				</fieldset>
-				<fieldset>
-					<legend>About your abduction </legend>
-					<label for="date">Requested date</label>
-					<input type="date" id="date" name="date">
-					<label for="qty">How many people would you like abducted?</label>
-					<input type="number" id="qty" name="qty" min="1" max="10">
+    <section class="main">
+        <div>
+            <h2>
+                Hello, I'm Yusef <br><span>Front-end Developer</span>
+            </h2>
+            <h3>I build web sites</h3>
+            <a href="#projects" class="main-btn">View my work</a>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/yousef.farhan.77" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/YusefFarhan" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yousef-farhan-98592a235/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
 
-					<p>What type of UFO do you prefer?</p>
-					<label>
-						<input type="radio" name="ufotype" value="classic" checked> Classic oval UFO
-					</label>
-					<label>
-						<input type="radio" name="ufotype" value="starwars"> Star Wars-style Imperial cruiser
-					</label>
-					<label>
-						<input type="radio" name="ufotype" value="galactica"> Battlestar Galactica-style Viper
-					</label>
-					<label>
-						<input type="radio" name="ufotype" value="startrek"> Borg-style cube
-					</label>
-					<label>
-						<input type="radio" name="ufotype" value="any"> Whatever is in the neighborhood
-					</label>
-
-					<label for="abtype">What type of abduction experience do you want?</label>
-					<select id="abtype" name="abtype">
-						<option selected>Select one...</option>
-						<option value="tour">Tour of the solar system</option>
-						<option value="dinner">Alien dinner and discussion</option>
-						<option value="dance">Alien dance lessons</option>
-						<option value="whales">Whale watching</option>
-					</select>
-
-					<label for="comments">Special requests:</label>
-					<textarea id="comments" name="comments"></textarea>
-
-					<label>
-						<input id="subscribe" name="subscribe" type="checkbox" value="subscribe">Add me to your email list
-					</label>
-					<input id="send_to" type="hidden" name="send_to" value="yourEmailHere">
-					<button type="submit">Submit</button>
-				</fieldset>
-			</form>
-
-		</section>
-		<aside>
-			<h3>Our Location</h3>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1411.1614370128507!2d-93.27191134226143!3d44.977751763344614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b3329a75fc44b3%3A0xab6d15df00205abb!2s60+South+6th+St%2C+Minneapolis%2C+MN+55402!5e0!3m2!1sen!2sus!4v1540308714418"
-			 width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-			<address>
-				Frontend Masters <br>
-				60 South 6th Street <br>
-				Suite 3625 <br>
-				Minneapolis, MN 55402
-			</address>
-		</aside>
-	</div>
-	<script src="js/forms.js"></script>
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-code"></i></div>
+                <div class="info">
+                    <h3>Coding</h3>
+                    <p>Writing code in programming languages such as C++ and JS</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="info">
+                    <h3>Building Web Sites</h3>
+                    <p>Building websites with HTML and CSS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects" id="projects">
+        <h2 class="title">Projects</h2>
+        <div class="content">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="imgs/work2.jpg" >
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Practising forms with HTML and CSS only</p>
+                    <strong class="project-title">
+                        <span>Exercise on forms</span>
+                        <a href="https://yuseffarhan.github.io/forms.github.io/" class="more-details" target="_blank">More details</a>
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="imgs/work1.png" >
+                </div>
+                <div class="project-info">
+                    <p class="project-category">Practising layouts with HTML and CSS only</p>
+                    <strong class="project-title">
+                        <span>Exercise on layouts</span>
+                        <a href="https://yuseffarhan.github.io/layouts.github.io/" class="more-details" target="_blank">More details</a>
+                    </strong>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cards-contact" id="contact">
+        <h2 class="title">Let's work together</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>+201101050923</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>yousef.farhan12345@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>Yusef Mahmoud</span></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/yousef.farhan.77" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://github.com/YusefFarhan" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/yousef-farhan-98592a235/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
 </body>
-
 </html>
